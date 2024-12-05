@@ -1,0 +1,3 @@
+C:/Users/liyi6/CLionProjects/CanteenSystem/cmake-build-debug/CMakeFiles/Functions.h.dir
+C:/Users/liyi6/CLionProjects/CanteenSystem/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/liyi6/CLionProjects/CanteenSystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir

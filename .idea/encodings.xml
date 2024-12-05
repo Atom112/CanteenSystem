@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/AddToSum.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/CanteenSystem.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/CustomerMode.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Functions.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Order.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ReadMenu.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/TableFeedback.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/TakeOutFeedback.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cmake-build-debug/Dishes.csv" charset="GBK" />
+  </component>
+</project>
