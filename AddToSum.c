@@ -6,5 +6,4 @@ void AddToSum (float *S_price,float *S_profit,float *S_cost,float *T_price,float
     *T_price = 0;
     *T_profit = 0;
     *T_cost = 0;
-
 }

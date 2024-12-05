@@ -3,8 +3,40 @@
 #include "Functions.h"
 void ManagerMode () {
     while (true) {
-        printf("åŠŸèƒ½é€‰æ‹©ï¼š");
-        printf("A-ç¼–è¾‘èœå•");
-        printf("B-æ”¶æ”¯æ˜ç»†");
+        char mode;
+        DishNode *dishes = NULL;
+        printf("¹¦ÄÜÑ¡Ôñ£º");
+        printf("A-±à¼­²Ëµ¥ B-ÊÕÖ§Ã÷Ï¸ Q-ÍË³öÏµÍ³\n");
+        scanf_s(" %c",&mode);
+        if (mode == 'A'||mode == 'a') {
+            ReadMenu(&dishes);
+            while (true) {
+                char commad;
+                printf("±à¼­Ä£Ê½Ñ¡Ôñ£º");
+                printf("A-Ôö¼Ó²ËÆ· D-É¾³ı²ËÆ· S-²éÕÒ²ËÆ· E-±à¼­²ËÆ·ĞÅÏ¢ Q-ÍË³ö±à¼­");
+                scanf_s(" %c",&commad);
+                if (commad == 'A'||commad == 'a') {
+                    AddDish();
+                }else if (commad == 'D'||commad == 'd') {
+                    DeleteDish();
+                }else if (commad == 'S'||commad == 's') {
+                    SearchDish();
+                }else if (commad == 'E'||commad == 'e') {
+                    EditDishInfo();
+                }else if (commad == 'Q'||commad == 'q') {
+                    break;
+                }else {
+                    printf("¹¦ÄÜ²»´æÔÚ£¡\n");
+                }
+            }
+
+        }else if (mode == 'B'||mode == 'b') {
+
+        }else if (mode == 'Q'||mode == 'q') {
+            break;
+        }
+        else {
+            printf("Ä£Ê½²»´æÔÚ£¡\n");
+        }
     }
 }

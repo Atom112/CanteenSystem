@@ -97,6 +97,30 @@ build CMakeFiles/Functions.h.dir/ManagerMode.c.obj: C_COMPILER__Functions.2eh_un
   OBJECT_DIR = CMakeFiles\Functions.h.dir
   OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
 
+build CMakeFiles/Functions.h.dir/AddDish.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/AddDish.c || cmake_object_order_depends_target_Functions.h
+  DEP_FILE = CMakeFiles\Functions.h.dir\AddDish.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+
+build CMakeFiles/Functions.h.dir/DeleteDish.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/DeleteDish.c || cmake_object_order_depends_target_Functions.h
+  DEP_FILE = CMakeFiles\Functions.h.dir\DeleteDish.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+
+build CMakeFiles/Functions.h.dir/SearchDish.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/SearchDish.c || cmake_object_order_depends_target_Functions.h
+  DEP_FILE = CMakeFiles\Functions.h.dir\SearchDish.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+
+build CMakeFiles/Functions.h.dir/EditDishInfo.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/EditDishInfo.c || cmake_object_order_depends_target_Functions.h
+  DEP_FILE = CMakeFiles\Functions.h.dir\EditDishInfo.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Functions.h
@@ -105,7 +129,7 @@ build CMakeFiles/Functions.h.dir/ManagerMode.c.obj: C_COMPILER__Functions.2eh_un
 #############################################
 # Link the executable Functions.h.exe
 
-build Functions.h.exe: C_EXECUTABLE_LINKER__Functions.2eh_Debug CMakeFiles/Functions.h.dir/ReadMenu.c.obj CMakeFiles/Functions.h.dir/Order.c.obj CMakeFiles/Functions.h.dir/TableFeedback.c.obj CMakeFiles/Functions.h.dir/TakeOutFeedback.c.obj CMakeFiles/Functions.h.dir/AddToSum.c.obj CMakeFiles/Functions.h.dir/CanteenSystem.c.obj CMakeFiles/Functions.h.dir/CustomerMode.c.obj CMakeFiles/Functions.h.dir/ManagerMode.c.obj
+build Functions.h.exe: C_EXECUTABLE_LINKER__Functions.2eh_Debug CMakeFiles/Functions.h.dir/ReadMenu.c.obj CMakeFiles/Functions.h.dir/Order.c.obj CMakeFiles/Functions.h.dir/TableFeedback.c.obj CMakeFiles/Functions.h.dir/TakeOutFeedback.c.obj CMakeFiles/Functions.h.dir/AddToSum.c.obj CMakeFiles/Functions.h.dir/CanteenSystem.c.obj CMakeFiles/Functions.h.dir/CustomerMode.c.obj CMakeFiles/Functions.h.dir/ManagerMode.c.obj CMakeFiles/Functions.h.dir/AddDish.c.obj CMakeFiles/Functions.h.dir/DeleteDish.c.obj CMakeFiles/Functions.h.dir/SearchDish.c.obj CMakeFiles/Functions.h.dir/EditDishInfo.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Functions.h.dir

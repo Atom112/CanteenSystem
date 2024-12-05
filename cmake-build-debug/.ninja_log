@@ -1,12 +1,13 @@
 # ninja log v6
 16	1233	7550645062863342	CMakeFiles/CanteenSystem.c.dir/CanteenSystem.c.obj	e07390ea4e56dbca
-115	2215	7550986264537720	CMakeFiles/Functions.h.dir/TakeOutFeedback.c.obj	39cbb82d8f19c2af
+115	2520	7551052208575674	CMakeFiles/Functions.h.dir/TakeOutFeedback.c.obj	39cbb82d8f19c2af
 1236	2213	7550645075066262	CanteenSystem.c.exe	1b2272b0739a81a7
-7	439	7550987186270214	build.ninja	38739bd64afa9291
-104	2054	7550986264437698	CMakeFiles/Functions.h.dir/Order.c.obj	9bd40cac9124b355
-5	1965	7550986263447682	CMakeFiles/Functions.h.dir/ReadMenu.c.obj	9075e78fcb20208d
-129	2300	7550986264687707	CMakeFiles/Functions.h.dir/CustomerMode.c.obj	1444036569521ec3
-109	2135	7550986264487717	CMakeFiles/Functions.h.dir/TableFeedback.c.obj	b5a010090feb4ead
-130	2735	7550985405919920	CMakeFiles/Functions.h.dir/AddToSum.c.obj	544132b0a3431433
-5	619	7550985747674165	CMakeFiles/Functions.h.dir/CanteenSystem.c.obj	115d63138fba896f
-2300	2644	7550986286392953	Functions.h.exe	bb530c343c1b0b14
+7	439	7551080986403055	build.ninja	38739bd64afa9291
+103	2356	7551052208455665	CMakeFiles/Functions.h.dir/Order.c.obj	9bd40cac9124b355
+6	1263	7551070643095391	CMakeFiles/Functions.h.dir/ReadMenu.c.obj	9075e78fcb20208d
+6	666	7551062038329677	CMakeFiles/Functions.h.dir/CustomerMode.c.obj	1444036569521ec3
+109	2442	7551052208515668	CMakeFiles/Functions.h.dir/TableFeedback.c.obj	b5a010090feb4ead
+127	2600	7551052208695671	CMakeFiles/Functions.h.dir/AddToSum.c.obj	544132b0a3431433
+105	1345	7551070644095004	CMakeFiles/Functions.h.dir/CanteenSystem.c.obj	115d63138fba896f
+696	1059	7551078062390341	Functions.h.exe	3c0a9fe2787cec9e
+7	695	7551078055507337	CMakeFiles/Functions.h.dir/ManagerMode.c.obj	5ad4d8112313bb66

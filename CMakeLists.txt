@@ -13,4 +13,8 @@ add_executable(
         CanteenSystem.c
         CustomerMode.c
         ManagerMode.c
+        AddDish.c
+        DeleteDish.c
+        SearchDish.c
+        EditDishInfo.c
 )

@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "Functions.h"
-
+float sum_price = 0;          //全部订单总销售额
+float sum_profit = 0;         //全部订单总利润
+float sum_cost = 0;           //全部订单总成本
+float TotalCost = 0;
+float TotalPrice = 0;
+float TotalProfit = 0;
 int main() {
     printf("餐厅管理系统V1.0\n");
     while (true) {
@@ -12,6 +17,7 @@ int main() {
             ManagerMode ();
         }else if(system_mode == 'C'|| system_mode == 'c') {
             CustomerMode ();
+            //printf("%f %f %f",sum_cost,sum_price,sum_profit );
         }else if(system_mode == 'Q'|| system_mode == 'q') {
             break;
         }else {
@@ -20,4 +26,3 @@ int main() {
     }
     return 0;
 }
-

@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/CanteenSystem.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/CustomerMode.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Functions.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ManagerMode.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Order.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ReadMenu.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/TableFeedback.c" charset="GBK" />

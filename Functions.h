@@ -1,7 +1,3 @@
-//
-// Created by 1 on 24-12-5.
-//
-
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
@@ -34,13 +30,15 @@ typedef struct DishNode {
     struct DishNode* next;      // 指向下一个节点的指针
 } DishNode;
 
-
-int ReadMenu(int *MenuDishNumber,Dish dishes[]);
-void Order(int MDN,Dish dishes[],float *T_Profit,float *T_Cost,float *T_Price,int *T_Time);
+int ReadMenu(DishNode **head);
+void Order(DishNode *head, float *T_Profit, float *T_Cost, float *T_Price, int *T_Time);
 void TableFeedback (TC tc,float *TotalPrice,int *TotalTime);
 void TakeoutFeedback (TKC tkc,float *TotalPrice,int *TotalTime);
 void AddToSum (float *S_price,float *S_profit,float *S_cost,float *T_price,float *T_profit,float *T_cost);
 void CustomerMode ();
 void ManagerMode ();
-void ManagerMode ();
+void AddDish ();
+void SearchDish ();
+void DeleteDish ();
+void EditDishInfo ();
 #endif //FUNCTIONS_H
