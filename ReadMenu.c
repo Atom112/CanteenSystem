@@ -3,6 +3,7 @@
 #include <string.h>
 
 #include "Functions.h"
+#include "print_table.h"
 int ReadMenu(DishNode **head) {
     FILE *file;
     char line[MAX_LINE_LENGTH];
