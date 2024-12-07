@@ -18,7 +18,7 @@
 #############################################
 # Minimal version of Ninja required by this file
 
-ninja_required_version = 1.5
+ninja_required_version = 1.8
 
 
 #############################################
@@ -41,103 +41,121 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/liyi6/CLionProjects/CanteenSystem/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Functions.h
+# Object build statements for EXECUTABLE target main
 
 
 #############################################
-# Order-only phony target for Functions.h
+# Order-only phony target for main
 
-build cmake_object_order_depends_target_Functions.h: phony || .
+build cmake_object_order_depends_target_main: phony || .
 
-build CMakeFiles/Functions.h.dir/ReadMenu.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/ReadMenu.c || cmake_object_order_depends_target_Functions.h
-  DEP_FILE = CMakeFiles\Functions.h.dir\ReadMenu.c.obj.d
+build CMakeFiles/main.dir/print_table.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/print_table.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\print_table.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Functions.h.dir
-  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
 
-build CMakeFiles/Functions.h.dir/Order.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/Order.c || cmake_object_order_depends_target_Functions.h
-  DEP_FILE = CMakeFiles\Functions.h.dir\Order.c.obj.d
+build CMakeFiles/main.dir/AddDish.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/AddDish.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\AddDish.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Functions.h.dir
-  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
 
-build CMakeFiles/Functions.h.dir/TableFeedback.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/TableFeedback.c || cmake_object_order_depends_target_Functions.h
-  DEP_FILE = CMakeFiles\Functions.h.dir\TableFeedback.c.obj.d
+build CMakeFiles/main.dir/AddToSum.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/AddToSum.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\AddToSum.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Functions.h.dir
-  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
 
-build CMakeFiles/Functions.h.dir/TakeOutFeedback.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/TakeOutFeedback.c || cmake_object_order_depends_target_Functions.h
-  DEP_FILE = CMakeFiles\Functions.h.dir\TakeOutFeedback.c.obj.d
+build CMakeFiles/main.dir/CanteenSystem.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/CanteenSystem.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\CanteenSystem.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Functions.h.dir
-  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
 
-build CMakeFiles/Functions.h.dir/AddToSum.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/AddToSum.c || cmake_object_order_depends_target_Functions.h
-  DEP_FILE = CMakeFiles\Functions.h.dir\AddToSum.c.obj.d
+build CMakeFiles/main.dir/CustomerMode.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/CustomerMode.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\CustomerMode.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Functions.h.dir
-  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
 
-build CMakeFiles/Functions.h.dir/CanteenSystem.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/CanteenSystem.c || cmake_object_order_depends_target_Functions.h
-  DEP_FILE = CMakeFiles\Functions.h.dir\CanteenSystem.c.obj.d
+build CMakeFiles/main.dir/DeleteDish.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/DeleteDish.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\DeleteDish.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Functions.h.dir
-  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
 
-build CMakeFiles/Functions.h.dir/CustomerMode.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/CustomerMode.c || cmake_object_order_depends_target_Functions.h
-  DEP_FILE = CMakeFiles\Functions.h.dir\CustomerMode.c.obj.d
+build CMakeFiles/main.dir/EditDishInfo.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/EditDishInfo.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\EditDishInfo.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Functions.h.dir
-  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
 
-build CMakeFiles/Functions.h.dir/ManagerMode.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/ManagerMode.c || cmake_object_order_depends_target_Functions.h
-  DEP_FILE = CMakeFiles\Functions.h.dir\ManagerMode.c.obj.d
+build CMakeFiles/main.dir/ManagerMode.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/ManagerMode.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\ManagerMode.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Functions.h.dir
-  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
 
-build CMakeFiles/Functions.h.dir/AddDish.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/AddDish.c || cmake_object_order_depends_target_Functions.h
-  DEP_FILE = CMakeFiles\Functions.h.dir\AddDish.c.obj.d
+build CMakeFiles/main.dir/Order.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/Order.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\Order.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Functions.h.dir
-  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
 
-build CMakeFiles/Functions.h.dir/DeleteDish.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/DeleteDish.c || cmake_object_order_depends_target_Functions.h
-  DEP_FILE = CMakeFiles\Functions.h.dir\DeleteDish.c.obj.d
+build CMakeFiles/main.dir/ReadMenu.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/ReadMenu.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\ReadMenu.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Functions.h.dir
-  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
 
-build CMakeFiles/Functions.h.dir/SearchDish.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/SearchDish.c || cmake_object_order_depends_target_Functions.h
-  DEP_FILE = CMakeFiles\Functions.h.dir\SearchDish.c.obj.d
+build CMakeFiles/main.dir/SearchDish.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/SearchDish.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\SearchDish.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Functions.h.dir
-  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
 
-build CMakeFiles/Functions.h.dir/EditDishInfo.c.obj: C_COMPILER__Functions.2eh_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/EditDishInfo.c || cmake_object_order_depends_target_Functions.h
-  DEP_FILE = CMakeFiles\Functions.h.dir\EditDishInfo.c.obj.d
+build CMakeFiles/main.dir/SyncToDish.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/SyncToDish.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\SyncToDish.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Functions.h.dir
-  OBJECT_FILE_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
+
+build CMakeFiles/main.dir/TableFeedback.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/TableFeedback.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\TableFeedback.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
+
+build CMakeFiles/main.dir/TakeOutFeedback.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/TakeOutFeedback.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\TakeOutFeedback.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
+
+build CMakeFiles/main.dir/WriteToBills.c.obj: C_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/WriteToBills.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\WriteToBills.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Functions.h
+# Link build statements for EXECUTABLE target main
 
 
 #############################################
-# Link the executable Functions.h.exe
+# Link the executable main.exe
 
-build Functions.h.exe: C_EXECUTABLE_LINKER__Functions.2eh_Debug CMakeFiles/Functions.h.dir/ReadMenu.c.obj CMakeFiles/Functions.h.dir/Order.c.obj CMakeFiles/Functions.h.dir/TableFeedback.c.obj CMakeFiles/Functions.h.dir/TakeOutFeedback.c.obj CMakeFiles/Functions.h.dir/AddToSum.c.obj CMakeFiles/Functions.h.dir/CanteenSystem.c.obj CMakeFiles/Functions.h.dir/CustomerMode.c.obj CMakeFiles/Functions.h.dir/ManagerMode.c.obj CMakeFiles/Functions.h.dir/AddDish.c.obj CMakeFiles/Functions.h.dir/DeleteDish.c.obj CMakeFiles/Functions.h.dir/SearchDish.c.obj CMakeFiles/Functions.h.dir/EditDishInfo.c.obj
+build main.exe: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/print_table.c.obj CMakeFiles/main.dir/AddDish.c.obj CMakeFiles/main.dir/AddToSum.c.obj CMakeFiles/main.dir/CanteenSystem.c.obj CMakeFiles/main.dir/CustomerMode.c.obj CMakeFiles/main.dir/DeleteDish.c.obj CMakeFiles/main.dir/EditDishInfo.c.obj CMakeFiles/main.dir/ManagerMode.c.obj CMakeFiles/main.dir/Order.c.obj CMakeFiles/main.dir/ReadMenu.c.obj CMakeFiles/main.dir/SearchDish.c.obj CMakeFiles/main.dir/SyncToDish.c.obj CMakeFiles/main.dir/TableFeedback.c.obj CMakeFiles/main.dir/TakeOutFeedback.c.obj CMakeFiles/main.dir/WriteToBills.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Functions.h.dir
+  OBJECT_DIR = CMakeFiles\main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Functions.h.exe
-  TARGET_IMPLIB = libFunctions.h.dll.a
-  TARGET_PDB = Functions.h.exe.dbg
+  TARGET_FILE = main.exe
+  TARGET_IMPLIB = libmain.dll.a
+  TARGET_PDB = main.exe.dbg
 
 
 #############################################
@@ -165,7 +183,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build Functions.h: phony Functions.h.exe
+build main: phony main.exe
 
 # =============================================================================
 # Folder targets.
@@ -175,23 +193,37 @@ build Functions.h: phony Functions.h.exe
 #############################################
 # Folder: C:/Users/liyi6/CLionProjects/CanteenSystem/cmake-build-debug
 
-build all: phony Functions.h.exe
+build all: phony main.exe
 
 # =============================================================================
 # Built-in targets
 
 
 #############################################
+# Phony target to force glob verification run.
+
+build C$:/Users/liyi6/CLionProjects/CanteenSystem/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake_force: phony
+
+
+#############################################
+# Re-run CMake to check if globbed directories changed.
+
+build C$:/Users/liyi6/CLionProjects/CanteenSystem/cmake-build-debug/CMakeFiles/cmake.verify_globs: VERIFY_GLOBS | C$:/Users/liyi6/CLionProjects/CanteenSystem/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake_force
+  pool = console
+  restat = 1
+
+
+#############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/liyi6/CLionProjects/CanteenSystem/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE C$:/Users/liyi6/CLionProjects/CanteenSystem/cmake-build-debug/CMakeFiles/cmake.verify_globs | C$:/Users/liyi6/CLionProjects/CanteenSystem/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/liyi6/CLionProjects/CanteenSystem/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/liyi6/CLionProjects/CanteenSystem/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build C$:/Users/liyi6/CLionProjects/CanteenSystem/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/liyi6/CLionProjects/CanteenSystem/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
 
 
 #############################################

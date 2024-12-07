@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 #include "Functions.h"
-
+extern int BillID;
 extern float sum_price;          //全部订单总销售额
 extern float sum_profit;         //全部订单总利润
 extern float sum_cost;           //全部订单总成本
@@ -24,11 +24,13 @@ void CustomerMode () {
         ReadMenu(&dishes);
 
         if (mode == 'A'||mode == 'a') {
+            BillID++;
             Order(dishes,&TotalProfit,&TotalCost,&TotalPrice,&TotalTime);
             TableFeedback (tc,&TotalPrice,&TotalTime);
             AddToSum (&sum_price,&sum_profit,&sum_cost,&TotalPrice,&TotalProfit,&TotalCost);
         }
         else if (mode == 'B'||mode == 'b') {
+            BillID++;
             Order(dishes,&TotalProfit,&TotalCost,&TotalPrice,&TotalTime);
             TakeoutFeedback (tkc,&TotalPrice,&TotalTime);
             AddToSum (&sum_price,&sum_profit,&sum_cost,&TotalPrice,&TotalProfit,&TotalCost);
@@ -39,9 +41,9 @@ void CustomerMode () {
         printf("是否退出点餐模式？（Y-是，N-否）\n");
         char a;
         scanf(" %c",&a);
-
         if(a=='Y'||a=='y') {
             DishNode* current = dishes;
+            WriteSumToBills(sum_price,sum_cost,sum_profit);
             while (current != NULL) {
                 DishNode* temp = current;
                 current = current->next;

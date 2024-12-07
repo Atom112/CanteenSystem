@@ -41,15 +41,47 @@ int ReadMenu(DishNode **head) {
     }
         fclose(file);
         // 显示菜单
-        DishNode* current = *head;
-        while (current != NULL) {
-            printf("菜品序号：%d\n", current->dish.id);
-            printf("菜名: %s\n", current->dish.name);
-            printf("价格: %.1f 元\n", current->dish.price);
-            printf("烹饪时间: %d min\n", current->dish.time);
-            printf("\n");
-            current = current->next;
+    DishNode* dishArray[MAX_DISHES];
+    int idx = 0;
+    DishNode* current = *head;
 
+    while (current != NULL && idx < MAX_DISHES) {
+        dishArray[idx++] = current;
+        current = current->next;
     }
+    for (int i = 0; i < idx - 1; i++) {
+        for (int j = 0; j < idx - i - 1; j++) {
+            if (dishArray[j]->dish.id > dishArray[j + 1]->dish.id) {
+                // 交换位置
+                DishNode* temp = dishArray[j];
+                dishArray[j] = dishArray[j + 1];
+                dishArray[j + 1] = temp;
+            }
+        }
+    }
+
+    // 打印序号从小到大的菜品信息
+    // for (int i = 0; i < idx; i++) {
+    //     printf("菜品序号：%d\n", dishArray[i]->dish.id);
+    //     printf("菜名: %s\n", dishArray[i]->dish.name);
+    //     printf("价格: %.1f 元\n", dishArray[i]->dish.price);
+    //     printf("烹饪时间: %d min\n", dishArray[i]->dish.time);
+    //     printf("\n");
+    // }
+
+    TABLE_HANDLE handle; // 表格句柄
+    TABLE_COL tableCol;  // 表格列结构体
+
+    tableCol.count = 4; // 设置列数
+    int width[] = { 16, 16, 16, 16}; // 定义列宽
+    tableCol.width = width; // 关联列宽到表格列结构体
+    TableInit(&handle, &tableCol, table_default_border); // 初始化表格
+    TableAddCol(handle, TABLE_MODE_MIDDLE, "菜品序号 菜名 价格/元  烹饪时间/min"); // 添加列标题
+    for (int i = 0; i < idx; i++) {
+        TableAddCol(handle, TABLE_MODE_MIDDLE, "%d %s %.1f %d", dishArray[i]->dish.id, dishArray[i]->dish.name, dishArray[i]->dish.price, dishArray[i]->dish.time); // 添加数据行
+    }
+    TablePrint(handle); // 打印表格
+    TableDestroy(handle); // 释放表格资源
+
     return 1;
 }

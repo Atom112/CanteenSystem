@@ -37,8 +37,12 @@ void TakeoutFeedback (TKC tkc,float *TotalPrice,int *TotalTime);
 void AddToSum (float *S_price,float *S_profit,float *S_cost,float *T_price,float *T_profit,float *T_cost);
 void CustomerMode ();
 void ManagerMode ();
-void AddDish ();
-void SearchDish ();
-void DeleteDish ();
-void EditDishInfo ();
+void AddDish(DishNode** head);
+DishNode* SearchDish(DishNode* head, const char* name);
+void DeleteDish(DishNode** head);
+void EditDishInfo(DishNode** head, const char* name);
+void SyncToCSV(DishNode* head);
+void WriteDetailToBills (DishNode* current,int DishNumber) ;
+void WriteDataToBills (float TotalPrice,float TotalCost,float TotalProfit);
+void WriteSumToBills (float S_Price,float S_Cost,float S_Profit);
 #endif //FUNCTIONS_H

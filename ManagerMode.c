@@ -13,16 +13,22 @@ void ManagerMode () {
             while (true) {
                 char commad;
                 printf("编辑模式选择：");
-                printf("A-增加菜品 D-删除菜品 S-查找菜品 E-编辑菜品信息 Q-退出编辑");
+                printf("A-增加菜品 D-删除菜品 S-查找菜品 E-编辑菜品信息 Q-退出编辑\n");
                 scanf_s(" %c",&commad);
                 if (commad == 'A'||commad == 'a') {
-                    AddDish();
+                    AddDish(&dishes);
                 }else if (commad == 'D'||commad == 'd') {
-                    DeleteDish();
+                    DeleteDish(&dishes);
                 }else if (commad == 'S'||commad == 's') {
-                    SearchDish();
+                    char newname[MAX_DISH_NAME];
+                    printf("请输入要查找的菜品名称：\n");
+                    scanf_s(" %s",&newname);
+                    SearchDish(dishes,newname);
                 }else if (commad == 'E'||commad == 'e') {
-                    EditDishInfo();
+                    char newname[MAX_DISH_NAME];
+                    printf("请输入要更改的菜品名称\n");
+                    scanf_s(" %s",&newname);
+                    EditDishInfo(&dishes,newname);
                 }else if (commad == 'Q'||commad == 'q') {
                     break;
                 }else {
