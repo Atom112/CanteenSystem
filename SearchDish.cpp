@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-
 #include "Functions.h"
 DishNode* SearchDish(DishNode* head, const char* name) {
     DishNode* current = head;

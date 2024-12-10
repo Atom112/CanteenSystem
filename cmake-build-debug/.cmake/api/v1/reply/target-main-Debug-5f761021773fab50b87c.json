@@ -28,7 +28,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 5,
 				"parent" : 0
 			},
 			{
@@ -45,18 +45,10 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu11 -fdiagnostics-color=always"
+					"fragment" : "-g -fdiagnostics-color=always"
 				}
 			],
-			"language" : "C",
-			"languageStandard" : 
-			{
-				"backtraces" : 
-				[
-					1
-				],
-				"standard" : "11"
-			},
+			"language" : "CXX",
 			"sourceIndexes" : 
 			[
 				0,
@@ -66,14 +58,19 @@
 				4,
 				5,
 				6,
+				7,
 				8,
-				9,
 				10,
 				11,
 				12,
 				13,
 				14,
-				15
+				15,
+				16,
+				17,
+				18,
+				19,
+				20
 			]
 		}
 	],
@@ -95,7 +92,7 @@
 				"role" : "libraries"
 			}
 		],
-		"language" : "C"
+		"language" : "CXX"
 	},
 	"name" : "main",
 	"nameOnDisk" : "main.exe",
@@ -117,67 +114,84 @@
 				4,
 				5,
 				6,
+				7,
 				8,
-				9,
 				10,
 				11,
 				12,
 				13,
 				14,
-				15
+				15,
+				16,
+				17,
+				18,
+				19,
+				20
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				7,
-				16
+				9,
+				21
 			]
 		}
 	],
 	"sources" : 
 	[
 		{
-			"backtrace" : 1,
+			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "print_table.c",
+			"path" : "AddDish.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "AddDish.c",
+			"path" : "AddToSum.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "AddToSum.c",
+			"path" : "BillDetail.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "CanteenSystem.c",
+			"path" : "CanteenSystem.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "CustomerMode.c",
+			"path" : "ClearBill.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "DeleteDish.c",
+			"path" : "CookManagement.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "EditDishInfo.c",
+			"path" : "CustomerMode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "DeleteDish.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "EditDishInfo.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -188,49 +202,67 @@
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "ManagerMode.c",
+			"path" : "IdentityVerification.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "Order.c",
+			"path" : "ManagerMode.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "ReadMenu.c",
+			"path" : "Order.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "SearchDish.c",
+			"path" : "ReadMenu.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "SyncToDish.c",
+			"path" : "SearchDish.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "TableFeedback.c",
+			"path" : "SyncToDish.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "TakeOutFeedback.c",
+			"path" : "TableFeedback.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "WriteToBills.c",
+			"path" : "TakeOutFeedback.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "TimeTransform.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "WriteToBills.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "print_table.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

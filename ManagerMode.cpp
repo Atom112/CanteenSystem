@@ -1,4 +1,3 @@
-#include <stdbool.h>
 #include <stdio.h>
 #include "Functions.h"
 void ManagerMode () {
@@ -6,7 +5,7 @@ void ManagerMode () {
         char mode;
         DishNode *dishes = NULL;
         printf("功能选择：");
-        printf("A-编辑菜单 B-收支明细 Q-退出系统\n");
+        printf("A-编辑菜单 B-收支明细 R-设置厨师数 Q-退出系统\n");
         scanf_s(" %c",&mode);
         if (mode == 'A'||mode == 'a') {
             ReadMenu(&dishes);
@@ -37,7 +36,16 @@ void ManagerMode () {
             }
 
         }else if (mode == 'B'||mode == 'b') {
-
+            BillDetail();
+            char choice;
+            printf("是否清除账单内容？（Y-是，其余任意输入-否）\n");
+            scanf_s(" %c",&choice);
+            if (choice == 'Y'||choice == 'y') {
+                ClearBill();
+            }
+        }
+        else if (mode == 'R'||mode == 'r') {
+            ResetCookNumber();
         }else if (mode == 'Q'||mode == 'q') {
             break;
         }

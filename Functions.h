@@ -5,6 +5,7 @@
 #define MAX_LINE_LENGTH 100
 #define MAX_DISHES 100
 
+
 typedef struct TableCustomer {
     int TableID;
     char name[30];
@@ -26,14 +27,14 @@ typedef struct {
 }Dish;
 
 typedef struct DishNode {
-    Dish dish;                  // 菜品信息
-    struct DishNode* next;      // 指向下一个节点的指针
+    Dish dish;                  // ??????
+    struct DishNode* next;      // ???????????????
 } DishNode;
 
 int ReadMenu(DishNode **head);
-void Order(DishNode *head, float *T_Profit, float *T_Cost, float *T_Price, int *T_Time);
-void TableFeedback (TC tc,float *TotalPrice,int *TotalTime);
-void TakeoutFeedback (TKC tkc,float *TotalPrice,int *TotalTime);
+void Order(DishNode *head, float *T_Profit, float *T_Cost, float *T_Price);
+void TableFeedback (TC tc,float *TotalPrice);
+void TakeoutFeedback (TKC tkc,float *TotalPrice);
 void AddToSum (float *S_price,float *S_profit,float *S_cost,float *T_price,float *T_profit,float *T_cost);
 void CustomerMode ();
 void ManagerMode ();
@@ -45,4 +46,13 @@ void SyncToCSV(DishNode* head);
 void WriteDetailToBills (DishNode* current,int DishNumber) ;
 void WriteDataToBills (float TotalPrice,float TotalCost,float TotalProfit);
 void WriteSumToBills (float S_Price,float S_Cost,float S_Profit);
+void BillDetail();
+void ClearBill();
+void IdentityVerification();
+void ResetPassword();
+void TimeTransform(int* plushour,int* plusminute,int time);
+int compare(const void* a, const void* b);
+int calculate_min_cook_time(int* times, int num_dishes);
+void LoadCookNumber(int * T_cook,int * M_cook, int* P_cook);
+void ResetCookNumber();
 #endif //FUNCTIONS_H

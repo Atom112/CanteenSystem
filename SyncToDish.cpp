@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #include "Functions.h"
 
 void SyncToCSV(DishNode* head) {

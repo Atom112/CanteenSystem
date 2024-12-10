@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 #include "Functions.h"
 #include "print_table.h"
 int ReadMenu(DishNode **head) {
@@ -61,14 +60,6 @@ int ReadMenu(DishNode **head) {
         }
     }
 
-    // 打印序号从小到大的菜品信息
-    // for (int i = 0; i < idx; i++) {
-    //     printf("菜品序号：%d\n", dishArray[i]->dish.id);
-    //     printf("菜名: %s\n", dishArray[i]->dish.name);
-    //     printf("价格: %.1f 元\n", dishArray[i]->dish.price);
-    //     printf("烹饪时间: %d min\n", dishArray[i]->dish.time);
-    //     printf("\n");
-    // }
 
     TABLE_HANDLE handle; // 表格句柄
     TABLE_COL tableCol;  // 表格列结构体

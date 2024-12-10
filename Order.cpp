@@ -1,12 +1,17 @@
-#include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
+
 #include "Functions.h"
 extern int BillID;
-void Order(DishNode *head, float *T_Profit, float *T_Cost, float *T_Price, int *T_Time) {
-
+int mintime;
+void Order(DishNode *head, float *T_Profit, float *T_Cost, float *T_Price) {
+    extern int best;
     int TotalDish = 0;              //当前订单中含有的菜数
     int Choice = 0;                 //选择模式
     int DishOrderNumber = 0;        //点餐的份数
+    int ListId = 0;
+    int k =3;
+    int *DishTime= (int *)malloc(sizeof(int)*MAX_DISHES);
 
     FILE *file;
     file = fopen("Bills.txt","a");
@@ -38,14 +43,25 @@ void Order(DishNode *head, float *T_Profit, float *T_Cost, float *T_Price, int *
 
         printf("餐品份数：");
         scanf("%d", &DishOrderNumber);
+        if (DishOrderNumber <= 0) {
+            printf("点餐份数必须大于零！");
+            continue;
+        }
+        TotalDish += DishOrderNumber;
+
+        while(ListId < TotalDish) {
+            DishTime[ListId] = current->dish.time;
+            ListId++;
+        }
 
         *T_Cost += current->dish.cost * (float)DishOrderNumber;
         *T_Price += current->dish.price * (float)DishOrderNumber;
         *T_Profit += current->dish.profit * (float)DishOrderNumber;
-        *T_Time += current->dish.time * DishOrderNumber;
-        TotalDish += DishOrderNumber;
         WriteDetailToBills(current,DishOrderNumber);
     }
+
     printf("总份数%d\n", TotalDish);
     WriteDataToBills(*T_Price,*T_Cost,*T_Profit);
+    mintime=calculate_min_cook_time(DishTime,TotalDish);
+
 }
