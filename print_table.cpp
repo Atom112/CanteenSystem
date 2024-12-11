@@ -34,10 +34,27 @@ int TableInit(TABLE_HANDLE *table, PTABLE_COL tableCol, const char *border){
 
     return 0;
 }
+// 计算字符串长度
+int calculateLength(const char *str) {
+    int length = 0;
+    while (*str) {
+        if ((*str & 0x80) == 0) {
+            // ASCII字符
+            length += 1;
+        } else {
+            // 中文字符（假设为UTF-8编码，中文通常占用3个字节）
+            length += 2;
+            str += 2; // 跳过中文字符的下两个字节
+        }
+        str++;
+    }
+    return length;
+}
 
 // 格式化字符串
 int FormatStr(char *str, int len){
-    int strLen = strlen(str);
+    //int strLen = strlen(str);
+    int strLen = calculateLength(str);
     if (strLen < len){
         return len - strLen;
     }

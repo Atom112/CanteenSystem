@@ -9,22 +9,28 @@ void AddDish(DishNode** head) {
     float newprice;
     float newcost;
     int newtime;
-    printf("请输入添加的菜品信息\n");
-    printf("菜品名称：\n");
-    scanf_s(" %s",&newname);
-    printf("菜品售价：\n");
-    scanf_s(" %f",&newprice);
-    printf("菜品成本：\n");
-    scanf_s(" %f",&newcost);
-    printf("菜品烹饪时间：\n");
-    scanf_s(" %d",&newtime);
+    while(true) {
+        printf("请输入添加的菜品信息：（Q-退出）\n");
+        printf("菜品名称：\n");
+        scanf_s("%s", newname, sizeof(newname) / sizeof(newname[0]));
+        if (strcmp(newname, "Q") == 0|| strcmp(newname, "q") == 0) {
+            break;
+        }
+        printf("菜品售价：\n");
+        scanf_s(" %f",&newprice);
+        printf("菜品成本：\n");
+        scanf_s(" %f",&newcost);
+        printf("菜品烹饪时间：\n");
+        scanf_s(" %d",&newtime);
 
-    DishNode* newDish = (DishNode*)malloc(sizeof(DishNode));            //
-    strcpy(newDish->dish.name, newname);                                    //
-    newDish->dish.price = newprice;                                         //
-    newDish->dish.cost = newcost;                                           //
-    newDish->dish.time = newtime;                                           //
-    newDish->next = *head;                                                  // 新节点插入到链表的头部
-    *head = newDish;
-    SyncToCSV(*head); // 每次增后同步
+        DishNode* newDish = (DishNode*)malloc(sizeof(DishNode));            //
+        strcpy(newDish->dish.name, newname);                                    //
+        newDish->dish.price = newprice;                                         //
+        newDish->dish.cost = newcost;                                           //
+        newDish->dish.time = newtime;                                           //
+        newDish->next = *head;                                                  // 新节点插入到链表的头部
+        *head = newDish;
+        SyncToCSV(*head); // 每次增后同步
+        SyncToCSVcpy(*head);
+    }
 }

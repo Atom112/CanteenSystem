@@ -13,7 +13,7 @@ void TakeoutFeedback (TKC tkc,float *TotalPrice) {
     scanf("%s",&tkc.address);
     printf("外送至%s\n", tkc.address);
     printf("总金额%.1f元\n", *TotalPrice);
-    printf("预计制作完成时间（不含外送）%d:%d\n",
+    printf("预计制作完成时间（不含外送）%02d:%02d\n",
            localTime->tm_hour + plushour,
            localTime->tm_min + plusminute);
     printf("祝您用餐愉快\n");

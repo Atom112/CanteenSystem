@@ -37,5 +37,5 @@ int TableAddCol(TABLE_HANDLE table, TABLE_MODE mode, char * format, ...);
 void TablePrint(TABLE_HANDLE table);
 void TableClean(TABLE_HANDLE table);
 void TableDestroy(TABLE_HANDLE table);
-
+int calculateLength(const char *str);
 #endif // __PRINT_TABLE_H__

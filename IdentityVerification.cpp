@@ -2,32 +2,36 @@
 #include <string.h>
 #include "Functions.h"
 
-void IdentityVerification() {
+bool IdentityVerification() {
     FILE *file;
     char passwd[100];
+    int counter = 0;
     file = fopen("passwd.txt","r");
     if (file == NULL) {
         printf("ERROR\n");
-        return;
     }
     fgets(passwd, 100, file);
     fclose(file);
 
-    while (true) {
+    while (5-counter >0) {
         char input[50];
         printf("请输入密码：\n");
         scanf("%s",input);
         if (strcmp(input, passwd) != 0) {
-            printf("密码错误，请重试\n");
+            counter++;
+            printf("密码错误，请重试，剩余%d次机会\n",5-counter);
         }else {
-            break;
+            return true;
         }
     }
+    printf("多次输入错误，已强制退出\n");
+    return false;
 }
 
 void ResetPassword() {
     IdentityVerification();
     FILE *file;
+
     while (true) {
         char temppasswd1[50];
         char temppasswd2[50];
@@ -37,6 +41,7 @@ void ResetPassword() {
         scanf("%s",temppasswd2);
 
         if (strcmp(temppasswd1, temppasswd2) != 0) {
+
             printf("两次密码不一致，请重试\n");
         }else {
             file=fopen("passwd.txt","w");
@@ -45,6 +50,7 @@ void ResetPassword() {
             break;
         }
     }
+
 }
 
 

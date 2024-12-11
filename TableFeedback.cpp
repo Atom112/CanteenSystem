@@ -14,7 +14,7 @@ void TableFeedback (TC tc,float *TotalPrice) {
     scanf_s("%d",&tc.TableID);
     printf("送至%d桌\n",tc.TableID);
     printf("总金额%.1f元\n", *TotalPrice);
-    printf("预计制作完成时间 %d:%d\n",
+    printf("预计制作完成时间 %02d:%02d\n",
             localTime->tm_hour + plushour,
             localTime->tm_min + plusminute);
     printf("祝您用餐愉快\n");

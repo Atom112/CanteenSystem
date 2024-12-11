@@ -5,7 +5,7 @@ void ManagerMode () {
         char mode;
         DishNode *dishes = NULL;
         printf("功能选择：");
-        printf("A-编辑菜单 B-收支明细 R-设置厨师数 Q-退出系统\n");
+        printf("A-编辑菜单 B-收支明细 S-设置厨师数 R-重置管理员密码 Q-退出系统\n");
         scanf_s(" %c",&mode);
         if (mode == 'A'||mode == 'a') {
             ReadMenu(&dishes);
@@ -19,15 +19,11 @@ void ManagerMode () {
                 }else if (commad == 'D'||commad == 'd') {
                     DeleteDish(&dishes);
                 }else if (commad == 'S'||commad == 's') {
-                    char newname[MAX_DISH_NAME];
-                    printf("请输入要查找的菜品名称：\n");
-                    scanf_s(" %s",&newname);
-                    SearchDish(dishes,newname);
+
+                    SearchDish(dishes);
                 }else if (commad == 'E'||commad == 'e') {
-                    char newname[MAX_DISH_NAME];
-                    printf("请输入要更改的菜品名称\n");
-                    scanf_s(" %s",&newname);
-                    EditDishInfo(&dishes,newname);
+
+                    EditDishInfo(&dishes);
                 }else if (commad == 'Q'||commad == 'q') {
                     break;
                 }else {
@@ -43,8 +39,10 @@ void ManagerMode () {
             if (choice == 'Y'||choice == 'y') {
                 ClearBill();
             }
+        }else if(mode == 'R'|| mode == 'r') {
+            ResetPassword();
         }
-        else if (mode == 'R'||mode == 'r') {
+        else if (mode == 'S'||mode == 's') {
             ResetCookNumber();
         }else if (mode == 'Q'||mode == 'q') {
             break;

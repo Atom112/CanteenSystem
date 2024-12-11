@@ -3,7 +3,78 @@
 #include <string.h>
 #include "Functions.h"
 #include "print_table.h"
+void PreReadMenu() {
+    FILE *source = fopen("Dishescpy.csv", "r");
+    FILE *target = fopen("Dishes.csv", "w"); // 以写模式打开目标文件，会清空原文件内容
+
+    if (source == NULL) {
+        perror("无法打开源文件\n");
+        return;
+    }
+
+    if (target == NULL) {
+        perror("无法打开目标文件\n");
+        fclose(source);
+        return;
+    }
+
+    char buffer[1024]; // 定义一个缓冲区
+
+    // 逐行读取源文件并写入目标文件
+    while (fgets(buffer, sizeof(buffer), source) != NULL) {
+        fputs(buffer, target);
+    }
+
+    // 关闭文件
+    fclose(source);
+    fclose(target);
+};
+
 int ReadMenu(DishNode **head) {
+
+while (true) {
+    FILE *file;
+    char line[MAX_LINE_LENGTH];
+    file = fopen("Dishes.csv", "r");
+
+    if (file == NULL) {
+        printf("打开菜单失败，请联系管理员\n");
+
+    }
+
+    *head = NULL;
+
+    while (fgets(line, sizeof(line), file)) {
+        line[strcspn(line, "\n")] = '\0';
+
+        // 创建新节点
+        DishNode* newNode = (DishNode*)malloc(sizeof(DishNode));
+
+        if (newNode == NULL) {
+            perror("内存分配失败");
+            fclose(file);
+            return false; // 返回false
+        }
+
+        char *name = strtok(line, ",");
+        char *price_str = strtok(NULL, ",");
+        char *cost_str = strtok(NULL, ",");
+        char *time_str = strtok(NULL, ",");
+
+        // 检查字段是否有缺失
+        if (name == NULL || price_str == NULL || cost_str == NULL || time_str == NULL) {
+            PreReadMenu();
+            break;
+        }
+
+    }
+    fclose(file);
+    free(*head);
+    break;
+}
+
+
+
     FILE *file;
     char line[MAX_LINE_LENGTH];
     file = fopen("Dishes.csv", "r");

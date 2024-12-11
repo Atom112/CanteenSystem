@@ -5,7 +5,6 @@
 #define MAX_LINE_LENGTH 100
 #define MAX_DISHES 100
 
-
 typedef struct TableCustomer {
     int TableID;
     char name[30];
@@ -39,16 +38,18 @@ void AddToSum (float *S_price,float *S_profit,float *S_cost,float *T_price,float
 void CustomerMode ();
 void ManagerMode ();
 void AddDish(DishNode** head);
-DishNode* SearchDish(DishNode* head, const char* name);
+void SyncToCSVcpy(DishNode* head);
+void PreReadMenu();
+DishNode* SearchDish(DishNode *head);
 void DeleteDish(DishNode** head);
-void EditDishInfo(DishNode** head, const char* name);
+void EditDishInfo(DishNode** head);
 void SyncToCSV(DishNode* head);
 void WriteDetailToBills (DishNode* current,int DishNumber) ;
 void WriteDataToBills (float TotalPrice,float TotalCost,float TotalProfit);
 void WriteSumToBills (float S_Price,float S_Cost,float S_Profit);
 void BillDetail();
 void ClearBill();
-void IdentityVerification();
+bool IdentityVerification();
 void ResetPassword();
 void TimeTransform(int* plushour,int* plusminute,int time);
 int compare(const void* a, const void* b);
