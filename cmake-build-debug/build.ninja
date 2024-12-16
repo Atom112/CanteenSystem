@@ -133,8 +133,8 @@ build CMakeFiles/main.dir/SearchDish.cpp.obj: CXX_COMPILER__main_unscanned_Debug
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir
 
-build CMakeFiles/main.dir/SyncToDish.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/SyncToDish.cpp || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles\main.dir\SyncToDish.cpp.obj.d
+build CMakeFiles/main.dir/Sync.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/liyi6/CLionProjects/CanteenSystem/Sync.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\Sync.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir
@@ -177,7 +177,7 @@ build CMakeFiles/main.dir/print_table.cpp.obj: CXX_COMPILER__main_unscanned_Debu
 #############################################
 # Link the executable main.exe
 
-build main.exe: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/AddDish.cpp.obj CMakeFiles/main.dir/AddToSum.cpp.obj CMakeFiles/main.dir/BillDetail.cpp.obj CMakeFiles/main.dir/CanteenSystem.cpp.obj CMakeFiles/main.dir/ClearBill.cpp.obj CMakeFiles/main.dir/CookManagement.cpp.obj CMakeFiles/main.dir/CustomerMode.cpp.obj CMakeFiles/main.dir/DeleteDish.cpp.obj CMakeFiles/main.dir/EditDishInfo.cpp.obj CMakeFiles/main.dir/IdentityVerification.cpp.obj CMakeFiles/main.dir/ManagerMode.cpp.obj CMakeFiles/main.dir/Order.cpp.obj CMakeFiles/main.dir/ReadMenu.cpp.obj CMakeFiles/main.dir/SearchDish.cpp.obj CMakeFiles/main.dir/SyncToDish.cpp.obj CMakeFiles/main.dir/TableFeedback.cpp.obj CMakeFiles/main.dir/TakeOutFeedback.cpp.obj CMakeFiles/main.dir/TimeTransform.cpp.obj CMakeFiles/main.dir/WriteToBills.cpp.obj CMakeFiles/main.dir/print_table.cpp.obj
+build main.exe: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/AddDish.cpp.obj CMakeFiles/main.dir/AddToSum.cpp.obj CMakeFiles/main.dir/BillDetail.cpp.obj CMakeFiles/main.dir/CanteenSystem.cpp.obj CMakeFiles/main.dir/ClearBill.cpp.obj CMakeFiles/main.dir/CookManagement.cpp.obj CMakeFiles/main.dir/CustomerMode.cpp.obj CMakeFiles/main.dir/DeleteDish.cpp.obj CMakeFiles/main.dir/EditDishInfo.cpp.obj CMakeFiles/main.dir/IdentityVerification.cpp.obj CMakeFiles/main.dir/ManagerMode.cpp.obj CMakeFiles/main.dir/Order.cpp.obj CMakeFiles/main.dir/ReadMenu.cpp.obj CMakeFiles/main.dir/SearchDish.cpp.obj CMakeFiles/main.dir/Sync.cpp.obj CMakeFiles/main.dir/TableFeedback.cpp.obj CMakeFiles/main.dir/TakeOutFeedback.cpp.obj CMakeFiles/main.dir/TimeTransform.cpp.obj CMakeFiles/main.dir/WriteToBills.cpp.obj CMakeFiles/main.dir/print_table.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\main.dir

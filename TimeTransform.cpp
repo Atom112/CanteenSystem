@@ -1,6 +1,7 @@
 #include <time.h>
 
 #include "Functions.h"
+//将烹饪所需时间转化为烹饪完成所在的时刻
 void TimeTransform(int* plushour,int* plusminute,int Time) {
     time_t t;
     time(&t); // 获取当前的时间戳

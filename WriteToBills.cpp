@@ -4,7 +4,7 @@
 
 void WriteDetailToBills (DishNode* current,int DishNumber) {
     FILE *file;
-    file = fopen("Bills.txt","a");
+    file = fopen("Bills.dll","a");
     fprintf(file,"%s*%d\n",current->dish.name,DishNumber);
     fclose(file);
 }
@@ -15,7 +15,7 @@ void WriteDataToBills (float TotalPrice,float TotalCost,float TotalProfit) {
     tm *localTime = localtime(&t);// 将时间戳转换为本地时间
 
     FILE *file;
-    file = fopen("Bills.txt","a");
+    file = fopen("Bills.dll","a");
     fprintf(file,"\n订单总额：%.1f元\n",TotalPrice);
     fprintf(file,"订单总成本：%.1f元\n",TotalCost);
     fprintf(file,"订单总利润：%.1f元\n",TotalProfit);
@@ -36,7 +36,7 @@ void WriteSumToBills (float S_Price,float S_Cost,float S_Profit) {
     tm *localTime = localtime(&t);// 将时间戳转换为本地时间
 
     FILE *file;
-    file = fopen("Bills.txt","a");
+    file = fopen("Bills.dll","a");
     fprintf(file,"%04d-%02d-%02d\n",
            localTime->tm_year + 1900,
            localTime->tm_mon + 1,

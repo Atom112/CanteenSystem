@@ -19,7 +19,7 @@ set(OLD_GLOB
   "C:/Users/liyi6/CLionProjects/CanteenSystem/Order.cpp"
   "C:/Users/liyi6/CLionProjects/CanteenSystem/ReadMenu.cpp"
   "C:/Users/liyi6/CLionProjects/CanteenSystem/SearchDish.cpp"
-  "C:/Users/liyi6/CLionProjects/CanteenSystem/SyncToDish.cpp"
+  "C:/Users/liyi6/CLionProjects/CanteenSystem/Sync.cpp"
   "C:/Users/liyi6/CLionProjects/CanteenSystem/TableFeedback.cpp"
   "C:/Users/liyi6/CLionProjects/CanteenSystem/TakeOutFeedback.cpp"
   "C:/Users/liyi6/CLionProjects/CanteenSystem/TimeTransform.cpp"

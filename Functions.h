@@ -4,7 +4,7 @@
 #define MAX_DISH_NAME 50
 #define MAX_LINE_LENGTH 100
 #define MAX_DISHES 100
-
+/*------用户，菜品，链表结构体定义，便于各个函数使用------*/
 typedef struct TableCustomer {
     int TableID;
     char name[30];
@@ -26,10 +26,11 @@ typedef struct {
 }Dish;
 
 typedef struct DishNode {
-    Dish dish;                  // ??????
-    struct DishNode* next;      // ???????????????
+    Dish dish;
+    struct DishNode* next;
 } DishNode;
 
+/*-----所有函数的声明------*/
 int ReadMenu(DishNode **head);
 void Order(DishNode *head, float *T_Profit, float *T_Cost, float *T_Price);
 void TableFeedback (TC tc,float *TotalPrice);
@@ -38,12 +39,12 @@ void AddToSum (float *S_price,float *S_profit,float *S_cost,float *T_price,float
 void CustomerMode ();
 void ManagerMode ();
 void AddDish(DishNode** head);
-void SyncToCSVcpy(DishNode* head);
-void PreReadMenu();
+void SyncToDishcpy(DishNode* head);
+void PreReadMenu(DishNode **head);
 DishNode* SearchDish(DishNode *head);
 void DeleteDish(DishNode** head);
 void EditDishInfo(DishNode** head);
-void SyncToCSV(DishNode* head);
+void SyncToDish(DishNode* head);
 void WriteDetailToBills (DishNode* current,int DishNumber) ;
 void WriteDataToBills (float TotalPrice,float TotalCost,float TotalProfit);
 void WriteSumToBills (float S_Price,float S_Cost,float S_Profit);
@@ -56,4 +57,9 @@ int compare(const void* a, const void* b);
 int calculate_min_cook_time(int* times, int num_dishes);
 void LoadCookNumber(int * T_cook,int * M_cook, int* P_cook);
 void ResetCookNumber();
+void CookDetail();
+void CheckCooks();
+void SyncToCookscpy(int t,int m,int p);
+void SyncToPasswdcpy(char n[],char p[]);
+void CheckPassword();
 #endif //FUNCTIONS_H
